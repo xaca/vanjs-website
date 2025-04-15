@@ -1,14 +1,12 @@
 import { useState } from 'react';
+import { scrollToSection } from '../../../utils/navigation';
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false); // Close mobile menu after clicking
-    }
+  const handleNavigation = (sectionId: string) => {
+    scrollToSection(sectionId);
+    setIsOpen(false); // Close mobile menu after clicking
   };
 
   return (
@@ -40,12 +38,12 @@ export default function Menu() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4 mr-4 ml-4">
-          <button onClick={() => scrollToSection('home')} className="text-black text-lg hover:text-gray-700">Home</button>
-          <button onClick={() => scrollToSection('about')} className="text-black text-lg hover:text-gray-700">About Us</button>
-          <button onClick={() => scrollToSection('organizers')} className="text-black text-lg hover:text-gray-700">Organizers</button>
-          <button onClick={() => scrollToSection('sponsors')} className="text-black text-lg hover:text-gray-700">Sponsors</button>
-          <button onClick={() => scrollToSection('events')} className="text-black text-lg hover:text-gray-700">Events</button>
-          <button onClick={() => scrollToSection('faq')} className="text-black text-lg hover:text-gray-700">FAQ</button>
+          <button onClick={() => handleNavigation('home')} className="text-black text-lg hover:text-gray-700">Home</button>
+          <button onClick={() => handleNavigation('about')} className="text-black text-lg hover:text-gray-700">About Us</button>
+          <button onClick={() => handleNavigation('organizers')} className="text-black text-lg hover:text-gray-700">Organizers</button>
+          <button onClick={() => handleNavigation('sponsors')} className="text-black text-lg hover:text-gray-700">Sponsors</button>
+          <button onClick={() => handleNavigation('events')} className="text-black text-lg hover:text-gray-700">Events</button>
+          <button onClick={() => handleNavigation('faq')} className="text-black text-lg hover:text-gray-700">FAQ</button>
           <a
             href="#"
             className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors text-xs"
@@ -58,12 +56,12 @@ export default function Menu() {
       {/* Mobile/Tablet Menu */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="flex flex-col space-y-2 pt-4">
-          <button onClick={() => scrollToSection('home')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Home</button>
-          <button onClick={() => scrollToSection('about')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">About Us</button>
-          <button onClick={() => scrollToSection('organizers')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Organizers</button>
-          <button onClick={() => scrollToSection('sponsors')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Sponsors</button>
-          <button onClick={() => scrollToSection('events')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Events</button>
-          <button onClick={() => scrollToSection('faq')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">FAQ</button>
+          <button onClick={() => handleNavigation('home')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Home</button>
+          <button onClick={() => handleNavigation('about')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">About Us</button>
+          <button onClick={() => handleNavigation('organizers')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Organizers</button>
+          <button onClick={() => handleNavigation('sponsors')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Sponsors</button>
+          <button onClick={() => handleNavigation('events')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Events</button>
+          <button onClick={() => handleNavigation('faq')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">FAQ</button>
           <a
             href="#"
             className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors text-sm mx-2 my-2 inline-block w-fit"

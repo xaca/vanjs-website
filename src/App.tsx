@@ -7,17 +7,21 @@ import Team from './components/sections/team/Team';
 import SubmitJoke from './components/sections/submit-joke/SubmitJoke';
 import Footer from './components/sections/footer/Footer';
 import Menu from './components/ui/menu/Menu';
+import Goals from './components/sections/goals/Goals';
 import './App.css';
 function App() {
   return (
       <div className="app">
-        <Menu />
         <main>
+          <Menu />
           <section id="home">
             <Header />
           </section>
           <section id="about">
             <About />
+          </section>
+          <section id="goals">
+            <Goals />
           </section>
           <section id="organizers">
             <Team />
