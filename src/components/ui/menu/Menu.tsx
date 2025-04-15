@@ -3,8 +3,16 @@ import { useState } from 'react';
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); // Close mobile menu after clicking
+    }
+  };
+
   return (
-    <nav className="bg-[#FFC107] px-4 py-2">
+    <nav className="bg-[#feb92f] px-4 py-2 sticky top-0 z-50">
       <div className="w-full mx-auto flex items-center justify-between">
         {/* Logo */}
         <img src="/vanjs-logo.png" alt="vanJS Logo" className="w-16 md:w-20 lg:w-24" />
@@ -32,12 +40,12 @@ export default function Menu() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4 mr-4 ml-4">
-          <a href="#" className="text-black text-lg hover:text-gray-700">Home</a>
-          <a href="#" className="text-black text-lg hover:text-gray-700">About Us</a>
-          <a href="#" className="text-black text-lg hover:text-gray-700">Organizers</a>
-          <a href="#" className="text-black text-lg hover:text-gray-700">Sponsors</a>
-          <a href="#" className="text-black text-lg hover:text-gray-700">Events</a>
-          <a href="#" className="text-black text-lg hover:text-gray-700">FAQ</a>
+          <button onClick={() => scrollToSection('home')} className="text-black text-lg hover:text-gray-700">Home</button>
+          <button onClick={() => scrollToSection('about')} className="text-black text-lg hover:text-gray-700">About Us</button>
+          <button onClick={() => scrollToSection('organizers')} className="text-black text-lg hover:text-gray-700">Organizers</button>
+          <button onClick={() => scrollToSection('sponsors')} className="text-black text-lg hover:text-gray-700">Sponsors</button>
+          <button onClick={() => scrollToSection('events')} className="text-black text-lg hover:text-gray-700">Events</button>
+          <button onClick={() => scrollToSection('faq')} className="text-black text-lg hover:text-gray-700">FAQ</button>
           <a
             href="#"
             className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors text-xs"
@@ -50,12 +58,12 @@ export default function Menu() {
       {/* Mobile/Tablet Menu */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="flex flex-col space-y-2 pt-4">
-          <a href="#" className="text-black text-sm hover:text-gray-700 px-2 py-2">Home</a>
-          <a href="#" className="text-black text-sm hover:text-gray-700 px-2 py-2">About Us</a>
-          <a href="#" className="text-black text-sm hover:text-gray-700 px-2 py-2">Organizers</a>
-          <a href="#" className="text-black text-sm hover:text-gray-700 px-2 py-2">Sponsors</a>
-          <a href="#" className="text-black text-sm hover:text-gray-700 px-2 py-2">Events</a>
-          <a href="#" className="text-black text-sm hover:text-gray-700 px-2 py-2">FAQ</a>
+          <button onClick={() => scrollToSection('home')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Home</button>
+          <button onClick={() => scrollToSection('about')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">About Us</button>
+          <button onClick={() => scrollToSection('organizers')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Organizers</button>
+          <button onClick={() => scrollToSection('sponsors')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Sponsors</button>
+          <button onClick={() => scrollToSection('events')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Events</button>
+          <button onClick={() => scrollToSection('faq')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">FAQ</button>
           <a
             href="#"
             className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors text-sm mx-2 my-2 inline-block w-fit"
