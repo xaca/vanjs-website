@@ -6,13 +6,13 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-3xl font-bold mb-4">vanJS</h2>
           <div className="flex gap-4">
-            <a href="https://www.linkedin.com/company/vanjs" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+            <a href="https://www.linkedin.com/company/vancouverjs/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
               <img src="/general/linkein_icon.png" alt="LinkedIn" className="w-8 h-8" />
             </a>
-            <a href="https://discord.gg/vanjs" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+            <a href="https://discord.gg/TBWB9tMmmC" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
               <img src="/general/discord_icon.png" alt="Discord" className="w-8 h-8" />
             </a>
-            <a href="https://www.meetup.com/vanjs" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+            <a href="https://www.meetup.com/vancouver-javascript-developers/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
               <img src="/general/meetup_icon.png" alt="Meetup" className="w-8 h-8" />
             </a>
             <a href="https://lu.ma/vanjs" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
@@ -47,7 +47,7 @@ export default function Footer() {
           <ul className="flex flex-col gap-2 text-center md:text-left">
             <li>
               <a 
-                href="https://github.com/vanjs-org/van" 
+                href="https://github.com/VanJS/meetup" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors"
@@ -57,7 +57,7 @@ export default function Footer() {
             </li>
             <li>
               <a 
-                href="https://vanjs.org/call-for-speakers" 
+                href="https://github.com/VanJS/meetup/blob/master/SPEAKING.md" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors"
@@ -67,7 +67,7 @@ export default function Footer() {
             </li>
             <li>
               <a 
-                href="https://vanjs.org/code-of-conduct" 
+                href="https://github.com/VanJS/meetup/blob/master/CONDUCT.md" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors"

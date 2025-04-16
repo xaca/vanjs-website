@@ -13,7 +13,10 @@ export default function SubmitJoke() {
         <p className="text-lg md:text-xl mb-8 text-gray-300">
           We love a good laugh! Submit your funniest joke and it might be featured at our upcoming event.
         </p>
-        <button className="bg-[#FDB347] hover:bg-[#FDA327] text-black font-semibold py-2 px-6 rounded-md transition-colors">
+        <button 
+          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScJgcHF72TR0UTX58_ofDAq646Jig19kG-3d7GwfBDkwYz6kw/viewform', '_blank')}
+          className="bg-[#FDB347] hover:bg-[#FDA327] text-black font-semibold py-2 px-6 rounded-md transition-colors"
+        >
           Submit Your Joke
         </button>
       </div>

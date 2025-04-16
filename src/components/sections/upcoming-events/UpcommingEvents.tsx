@@ -5,6 +5,7 @@ interface Event {
   title: string;
   time: string;
   location: string;
+  link: string;
 }
 
 const events: Event[] = [
@@ -14,7 +15,8 @@ const events: Event[] = [
     day: '16',
     title: 'VanJS Easter Talks',
     time: '5:30 - 8:30 PM',
-    location: 'Northeastern University'
+    location: 'Northeastern University',
+    link: 'https://lu.ma/922x0qa2'
   },
   {
     id: 2,
@@ -22,7 +24,8 @@ const events: Event[] = [
     day: '15',
     title: 'Super VanJS',
     time: '5:30 - 8:30 PM',
-    location: 'BCIT Downtown Campus'
+    location: 'BCIT Downtown Campus',
+    link: 'https://lu.ma/tfbpdw58'
   }
 ];
 
@@ -65,9 +68,14 @@ export default function UpcommingEvents() {
 
             {/* Button Column */}
             <div className="col-span-12 sm:col-span-3 flex items-center justify-end">
-              <button className="w-full sm:w-auto px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:text-white hover:border-white transition-colors">
+              <a 
+                href={event.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:text-white hover:border-white transition-colors text-center"
+              >
                 Save Your Spot Here!
-              </button>
+              </a>
             </div>
           </div>
         ))}
