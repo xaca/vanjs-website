@@ -5,7 +5,7 @@ export default function Header() {
     <header className="bg-[#feb92f] h-[60vh] flex items-center justify-center w-full">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-          We foster the JS community<br className="hidden sm:block" />
+          We foster the JS community&nbsp;<br className="hidden sm:block" />
           in Vancouver
         </h1>
         <button 

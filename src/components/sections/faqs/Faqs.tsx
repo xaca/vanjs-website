@@ -35,7 +35,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: {
         }`}
         onClick={onClick}
       >
-        <span className="font-medium font-black text-gray-900">{question}</span>
+        <span className="font-semibold text-gray-900">{question}</span>
         <span className={`flex items-center justify-center w-6 h-6 text-lg font-bold transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}>
           {isOpen ? '−' : '+'}
         </span>

@@ -74,13 +74,13 @@ export default function Gallery() {
 
   return (
     <div className=" bg-black mx-auto px-10 py-8 mt-20 mb-20">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[250px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[250px]">
         {photos.map((photo, idx) => (
           <div
             key={photo.src}
             className="relative rounded-lg overflow-hidden cursor-pointer group"
             style={{ 
-              gridArea: photo.gridArea,
+              gridArea: window.innerWidth >= 768 ? photo.gridArea : undefined,
               height: "100%",
               width: "100%"
             }}

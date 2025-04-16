@@ -16,7 +16,7 @@ export default function Goals() {
           <div className="bg-amber-400 rounded-full p-6 mb-4">
             <img src={goals_icon_1} alt="Connect and educate" className="w-16" />
           </div>
-          <h3 className="text-lg font-semibold mb-2">Connect and educate the JS community in Vancouver</h3>
+          <h3 className="text-lg mb-2">Connect and educate the JS community in Vancouver</h3>
         </div>
 
         {/* Foster culture */}
@@ -24,7 +24,7 @@ export default function Goals() {
           <div className="bg-amber-400 rounded-full p-6 mb-4">
           <img src={goals_icon_2} alt="Connect and educate" className="w-16" />
           </div>
-          <h3 className="text-lg font-semibold mb-2">Foster a culture of quality and respect</h3>
+          <h3 className="text-lg mb-2">Foster a culture of quality and respect</h3>
         </div>
 
         {/* Stay focused */}
@@ -32,7 +32,7 @@ export default function Goals() {
           <div className="bg-amber-400 rounded-full p-6 mb-4">
           <img src={goals_icon_3} alt="Connect and educate" className="w-16" />
           </div>
-          <h3 className="text-lg font-semibold mb-2">Stay focused on developer-centric topics and events</h3>
+          <h3 className="text-lg mb-2">Stay focused on developer-centric topics and events</h3>
         </div>
 
         {/* Support newcomers */}
@@ -40,7 +40,7 @@ export default function Goals() {
           <div className="bg-amber-400 rounded-full p-6 mb-4">
           <img src={goals_icon_4} alt="Connect and educate" className="w-16" />
           </div>
-          <h3 className="text-lg font-semibold mb-2">Support newcomers and underrepresented groups in our community</h3>
+          <h3 className="text-lg mb-2">Support newcomers and underrepresented groups in our community</h3>
         </div>
       </div>
     </section>
