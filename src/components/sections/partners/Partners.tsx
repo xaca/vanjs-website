@@ -1,3 +1,6 @@
+import atono_icon from "/general/atono_icon.jpg";
+import trust_flight_icon from "/general/trust_flight_icon.jpg";
+
 export default function Partners() {
   return (
     <section className="py-16 px-4">
@@ -15,7 +18,7 @@ export default function Partners() {
               target="_blank"
               rel="noopener noreferrer">
               <img
-                src="/general/atono_icon.jpg"
+                src={atono_icon}
                 alt="Atono"
                 className="object-contain"
               /></a>
@@ -30,7 +33,7 @@ export default function Partners() {
               target="_blank"
               rel="noopener noreferrer">
               <img
-                src="/general/trust_flight_icon.jpg"
+                src={trust_flight_icon}
                 alt="Trust Flight"
                 className="object-contain"
               />
@@ -44,7 +47,7 @@ export default function Partners() {
           href="https://github.com/VanJS/meetup/issues"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:text-white hover:bg-black transition-colors"
+          className="inline-block px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:border-[#feb92f] hover:text-[#feb92f] hover:scale-105 hover:bg-white transition-colors"
         >
           Become An Sponsor
         </a>

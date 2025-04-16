@@ -1,3 +1,5 @@
+import vanjs_host from "/photos/vanjs_host.jpg";
+
 export default function About() {
   return (
     <section className="bg-white py-16 px-4 md:px-8 lg:px-16">
@@ -14,7 +16,7 @@ export default function About() {
               href="https://github.com/VanJS/meetup"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block cursor-pointer px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:text-white hover:bg-black transition-colors"
+              className="inline-block cursor-pointer px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:bg-white hover:border-[#feb92f] hover:text-[#feb92f] hover:scale-105 transition-colors"
             >
               Check It Out Here
             </a>
@@ -23,7 +25,7 @@ export default function About() {
           {/* Image Side */}
           <div className="relative w-full h-full min-h-[400px] rounded-2xl overflow-hidden">
             <img 
-              src="/photos/vanjs_host.jpg" 
+              src={vanjs_host} 
               alt="VanJS Meetup"
               className="w-full h-full object-cover rounded-2xl"
             />

@@ -1,3 +1,10 @@
+import linkedin_icon from "/general/linkedin_icon.png";
+import discord_icon from "/general/discord_icon.png";
+import meetup_icon from "/general/meetup_icon.png";
+import luma_icon from "/general/luma_icon.png";
+import discord_logo from "/general/discord_logo.png";
+import ruben_duck from "/general/ruben.png";
+
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-12 px-4 md:px-8">
@@ -7,16 +14,16 @@ export default function Footer() {
           <h2 className="text-3xl font-bold mb-4">vanJS</h2>
           <div className="flex gap-4">
             <a href="https://www.linkedin.com/company/vancouverjs/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
-              <img src="/general/linkedin_icon.png" alt="LinkedIn" className="w-8" />
+              <img src={linkedin_icon} alt="LinkedIn" className="w-8" />
             </a>
             <a href="https://discord.gg/TBWB9tMmmC" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
-              <img src="/general/discord_icon.png" alt="Discord" className="w-8" />
+              <img src={discord_icon} alt="Discord" className="w-8" />
             </a>
             <a href="https://www.meetup.com/vancouver-javascript-developers/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
-              <img src="/general/meetup_icon.png" alt="Meetup" className="w-8" />
+              <img src={meetup_icon} alt="Meetup" className="w-8" />
             </a>
             <a href="https://lu.ma/vanjs" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
-              <img src="/general/luma_icon.png" alt="Luma" className="w-8" />
+              <img src={luma_icon} alt="Luma" className="w-8" />
             </a>
           </div>
         </div>
@@ -30,12 +37,12 @@ export default function Footer() {
           </p>
           
           <div className="flex items-center gap-2 mb-2">
-            <img src="/general/ruben.png" alt="Duck" className="w-8 h-8" />
+            <img src={ruben_duck} alt="Duck" className="w-8 h-8" />
             <a 
             href="https://discord.gg/TBWB9tMmmC" 
             target="_blank" 
             rel="noopener noreferrer">
-              <img src="/general/discord_logo.png" alt="Discord" className="h-16" />
+              <img src={discord_logo} alt="Discord" className="h-16" />
             </a>
           </div>
         </div>

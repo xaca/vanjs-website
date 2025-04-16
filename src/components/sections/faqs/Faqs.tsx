@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import vanjs_faqs from "/photos/vanjs_faqs.jpg";
 interface FaqItem {
   question: string;
   answer: string[];
@@ -28,14 +28,14 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: {
   onClick: () => void;
 }) => {
   return (
-    <div className={`mb-4 last:mb-0 ${isOpen ? 'bg-amber-100' : 'bg-white'} rounded-lg overflow-hidden transition-colors duration-200`}>
+    <div className={`border-1 border-[#feb92f] mb-4 last:mb-0 ${isOpen ? 'bg-[#feb92f]' : 'bg-white'} rounded-lg overflow-hidden transition-colors duration-200`}>
       <button
         className={`w-full py-4 px-6 text-left flex justify-between items-center transition-colors duration-200 ${
-          isOpen ? 'bg-amber-400' : 'bg-amber-50 hover:bg-amber-100'
+          isOpen ? 'bg-[#feb92f]' : 'bg-white hover:bg-[#feb92f]'
         }`}
         onClick={onClick}
       >
-        <span className="font-medium text-gray-900">{question}</span>
+        <span className="font-medium font-black text-gray-900">{question}</span>
         <span className={`flex items-center justify-center w-6 h-6 text-lg font-bold transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}>
           {isOpen ? '−' : '+'}
         </span>
@@ -60,7 +60,7 @@ export default function Faqs() {
         <div className="relative md:sticky md:top-16">
           <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden">
             <img
-              src="/photos/vanjs_faqs.jpg"
+              src={vanjs_faqs}
               alt="VanJS Meetup Community"
               className="h-60 lg:h-120 md:h-140 object-cover"
             />

@@ -1,27 +1,31 @@
+import bibi from "/photos/01_bibi.png";
+import shawn from "/photos/02_shawn.png";
+import anton from "/photos/03_anton.png";
+
 export default function Team() {
   const teamMembers = [
     {
       name: "Bibi Souza",
       role: "Co-organizer",
-      image: "/photos/01_bibi.png",
+      image: bibi,
       linkedin: "https://www.linkedin.com/in/bibschan/",
     },
     {
       name: "Shawn McKay",
       role: "Co-organizer",
-      image: "/photos/02_shawn.png",
+      image: shawn,
       linkedin: "https://www.linkedin.com/in/shmck/",
     },
     {
       name: "Anton Zalaidinov",
       role: "Co-organizer",
-      image: "/photos/03_anton.png",
+      image: anton,
       linkedin: "https://www.linkedin.com/in/zalaldinov/",
     },
   ];
 
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto">
+    <section className="bg-[#F8F8F8] py-16 px-4 w-full">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4">The Team</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
@@ -29,7 +33,6 @@ export default function Team() {
           creating unforgettable experiences, and building stronger community.
         </p>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
         {teamMembers.map((member) => (
           <div key={member.name} className="text-center">
