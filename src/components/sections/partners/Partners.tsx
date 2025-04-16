@@ -11,9 +11,9 @@ export default function Partners() {
           <div className="flex flex-col items-center">
             <div className="w-24 h-24 bg-[#4285f4] rounded-lg flex items-center justify-center">
               <img
-                src="/atono-logo.png"
+                src="/general/atono_icon.jpg"
                 alt="Atono"
-                className="w-16 h-16 object-contain"
+                className="object-contain"
               />
             </div>
             <p className="mt-2 font-medium">Atono</p>
@@ -22,9 +22,9 @@ export default function Partners() {
           <div className="flex flex-col items-center">
             <div className="w-24 h-24 bg-[#1a1a1a] rounded-lg flex items-center justify-center">
               <img
-                src="/trustflight-logo.png"
-                alt="TrustFlight"
-                className="w-16 h-16 object-contain"
+                src="/general/trust_flight_icon.jpg"
+                alt="Trust Flight"
+                className="object-contain"
               />
             </div>
             <p className="mt-2 font-medium">TrustFlight</p>

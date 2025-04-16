@@ -1,7 +1,22 @@
-export default function SubmitJoke(){
+export default function SubmitJoke() {
   return (
-    <div>
-      <h1>Submit Joke</h1>
+    <div className="relative min-h-[300px] flex flex-col items-center justify-center bg-black text-white py-16 px-4">
+      <div className="max-w-2xl mx-auto text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 flex items-center justify-center gap-2">
+          Make Us LOL!
+          <img 
+            src="/general/quaky.png" 
+            alt="Laughing emoji" 
+            className="w-10 h-10 md:w-12 md:h-12 inline-block rotate-35"
+          />
+        </h1>
+        <p className="text-lg md:text-xl mb-8 text-gray-300">
+          We love a good laugh! Submit your funniest joke and it might be featured at our upcoming event.
+        </p>
+        <button className="bg-[#FDB347] hover:bg-[#FDA327] text-black font-semibold py-2 px-6 rounded-md transition-colors">
+          Submit Your Joke
+        </button>
+      </div>
     </div>
   );
 }
