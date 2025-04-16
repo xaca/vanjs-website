@@ -38,12 +38,12 @@ export default function Menu() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4 mr-4 ml-4">
-          <button onClick={() => handleNavigation('home')} className="text-black text-lg hover:text-gray-700">Home</button>
-          <button onClick={() => handleNavigation('about')} className="text-black text-lg hover:text-gray-700">About Us</button>
-          <button onClick={() => handleNavigation('organizers')} className="text-black text-lg hover:text-gray-700">Organizers</button>
-          <button onClick={() => handleNavigation('sponsors')} className="text-black text-lg hover:text-gray-700">Sponsors</button>
-          <button onClick={() => handleNavigation('events')} className="text-black text-lg hover:text-gray-700">Events</button>
-          <button onClick={() => handleNavigation('faq')} className="text-black text-lg hover:text-gray-700">FAQ</button>
+          <button onClick={() => handleNavigation('home')} className="cursor-pointer text-black text-lg hover:text-gray-700">Home</button>
+          <button onClick={() => handleNavigation('about')} className="cursor-pointer text-black text-lg hover:text-gray-700">About Us</button>
+          <button onClick={() => handleNavigation('organizers')} className="cursor-pointer text-black text-lg hover:text-gray-700">Organizers</button>
+          <button onClick={() => handleNavigation('sponsors')} className="cursor-pointer text-black text-lg hover:text-gray-700">Sponsors</button>
+          <button onClick={() => handleNavigation('events')} className="cursor-pointer text-black text-lg hover:text-gray-700">Events</button>
+          <button onClick={() => handleNavigation('faq')} className="cursor-pointer text-black text-lg hover:text-gray-700">FAQ</button>
           <a
             href="https://discord.gg/TBWB9tMmmC"
             target="_blank"
