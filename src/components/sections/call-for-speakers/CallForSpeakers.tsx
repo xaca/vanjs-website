@@ -1,0 +1,20 @@
+export default function CallForSpeakers() {
+  return (
+    <section className="py-16 px-4 bg-[#feb92f] rounded-md">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Do you want to share your experience with our community?
+        </h2>
+        <p className="text-lg text-gray-800 mb-8">
+          We would love to have you sharing your knowledge as one of our speakers!
+        </p>
+        <a
+          href="#"
+          className="inline-block px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors"
+        >
+          Send Your Application Here
+        </a>
+      </div>
+    </section>
+  );
+}
