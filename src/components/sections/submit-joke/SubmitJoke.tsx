@@ -15,7 +15,7 @@ export default function SubmitJoke() {
         </p>
         <button 
           onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScJgcHF72TR0UTX58_ofDAq646Jig19kG-3d7GwfBDkwYz6kw/viewform', '_blank')}
-          className="bg-[#FDB347] hover:bg-[#FDA327] text-black font-semibold py-2 px-6 rounded-md transition-colors"
+          className="bg-[#FDB347] cursor-pointer hover:bg-white hover:text-black text-black font-semibold py-2 px-6 rounded-md transition-colors"
         >
           Submit Your Joke
         </button>

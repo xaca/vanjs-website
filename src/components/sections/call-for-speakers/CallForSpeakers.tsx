@@ -8,9 +8,12 @@ export default function CallForSpeakers() {
         <p className="text-lg text-gray-800 mb-8">
           We would love to have you sharing your knowledge as one of our speakers!
         </p>
+        
         <a
-          href="#"
-          className="inline-block px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors"
+          href="https://github.com/VanJS/meetup/blob/master/SPEAKING.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-8 py-3 bg-black text-white font-semibold cursor-pointer rounded-lg hover:bg-white hover:text-black transition-colors"
         >
           Send Your Application Here
         </a>

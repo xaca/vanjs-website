@@ -45,8 +45,10 @@ export default function Menu() {
           <button onClick={() => handleNavigation('events')} className="text-black text-lg hover:text-gray-700">Events</button>
           <button onClick={() => handleNavigation('faq')} className="text-black text-lg hover:text-gray-700">FAQ</button>
           <a
-            href="#"
-            className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors text-xs"
+            href="https://discord.gg/TBWB9tMmmC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black cursor-pointer text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors text-xs"
           >
             Join Our Discord
           </a>
@@ -63,8 +65,10 @@ export default function Menu() {
           <button onClick={() => handleNavigation('events')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Events</button>
           <button onClick={() => handleNavigation('faq')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">FAQ</button>
           <a
-            href="#"
-            className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors text-sm mx-2 my-2 inline-block w-fit"
+            href="https://discord.gg/TBWB9tMmmC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black cursor-pointer text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors text-sm mx-2 my-2 inline-block w-fit"
           >
             Join Our Discord
           </a>

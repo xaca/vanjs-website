@@ -4,19 +4,19 @@ export default function Team() {
       name: "Bibi Souza",
       role: "Co-organizer",
       image: "/photos/01_bibi.png",
-      linkedin: "https://www.linkedin.com/in/bibisouza",
+      linkedin: "https://www.linkedin.com/in/bibschan/",
     },
     {
       name: "Shawn McKay",
       role: "Co-organizer",
       image: "/photos/02_shawn.png",
-      linkedin: "https://www.linkedin.com/in/shawnmckay",
+      linkedin: "https://www.linkedin.com/in/shmck/",
     },
     {
       name: "Anton Zalaidinov",
       role: "Co-organizer",
       image: "/photos/03_anton.png",
-      linkedin: "https://www.linkedin.com/in/antonzalaidinov",
+      linkedin: "https://www.linkedin.com/in/zalaldinov/",
     },
   ];
 

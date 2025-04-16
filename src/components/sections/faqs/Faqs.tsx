@@ -2,27 +2,28 @@ import { useState } from 'react';
 
 interface FaqItem {
   question: string;
-  answer: string;
+  answer: string[];
 }
 
 const faqs: FaqItem[] = [
   {
     question: "Who can attend the meetup?",
-    answer: "Our meetup welcomes everyone interested in the Vancouver JavaScript community! Whether you are a complete beginner, an experienced developer, or simply curious about JavaScript, we invite you to join us. We welcome humans from all backgrounds, genders, ages and experiences—come be part of our community!"
+    answer: ["Our meetup welcomes everyone interested in the Vancouver JavaScript community! Whether you are a complete beginner, an experienced developer, or simply curious about JavaScript, we invite you to join us. We welcome humans from all backgrounds, genders, ages and experiences—come be part of our community!"]
   },
   {
     question: "When and where does the meetup take place?",
-    answer: "Our meetups are typically held monthly at various tech-friendly venues across Vancouver. The specific date, time, and location for each meetup are announced on our website and social media channels at least two weeks in advance."
+    answer: ["We usually meet once a month, and occasionally have smaller related events running 1-2 times a month. The location varies, largely depending on our ability to secure a venue. We typically announce the details a month in advance."]
   },
   {
     question: "You have sponsors but charge for the ticket?",
-    answer: "While we do have amazing sponsors who help us with venues and refreshments, we charge a nominal fee to ensure committed attendance and help cover additional costs like equipment rentals and event materials. We reinvest all proceeds back into the community."
+    answer: ["Our entrance fee is mostly symbolic, as we ran VanJS free of charge for the longest time and found that 40% of the RSVPs were no-shows, leaving us with tons of food and drinks that went to waste. The meetup organizers don't take profit from the event, everything is reinvested into the meetup (prizes, better venues, parties, etc).",
+    "If you want to attend the meetup but have no means to contribute at this time, reach out to one of our organizers on LinkedIn and they will be happy to assist on a case-by-case basis."]
   }
 ];
 
 const AccordionItem = ({ question, answer, isOpen, onClick }: { 
   question: string; 
-  answer: string; 
+  answer: string[]; 
   isOpen: boolean; 
   onClick: () => void;
 }) => {
@@ -44,7 +45,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: {
           isOpen ? 'max-h-96' : 'max-h-0'
         }`}
       >
-        <p className="p-6 text-gray-600">{answer}</p>
+        <p className="p-6 text-gray-600 text-left">{answer.map((line, index) => <p className="mb-2" key={index}>{line}</p>)}</p>
       </div>
     </div>
   );

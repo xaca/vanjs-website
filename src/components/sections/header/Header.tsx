@@ -11,8 +11,8 @@ export default function Header() {
         <button 
           onClick={() => scrollToSection('events')}
           className="bg-[#feb92f] border-1 border-black text-black px-6 py-3 rounded-md text-lg font-medium
-                   hover:text-white hover:border-white transition-colors duration-200
-                   transform hover:scale-105 active:scale-100"
+                   hover:text-white hover:bg-black transition-colors duration-200
+                   transform hover:scale-105 cursor-pointer active:scale-100"
         >
           Check Out Our Upcoming Events
         </button>
