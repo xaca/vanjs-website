@@ -73,8 +73,8 @@ export default function Gallery() {
   const [index, setIndex] = useState(-1);
 
   return (
-    <div className=" bg-black mx-auto px-10 py-8 mt-20 mb-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[250px]">
+    <div className="w-full bg-black px-10 py-8 mt-20 mb-20">
+      <div className="mx-auto lg:w-[800px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[250px]">
         {photos.map((photo, idx) => (
           <div
             key={photo.src}

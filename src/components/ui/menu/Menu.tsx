@@ -11,10 +11,10 @@ export default function Menu() {
   };
 
   return (
-    <nav className="bg-[#feb92f] px-4 py-2 sticky top-0 z-50">
+    <nav className="bg-[#feb92f] pt-4 px-4 py-2 sticky top-0 z-50">
       <div className="w-full mx-auto flex items-center justify-between">
         {/* Logo */}
-        <img src={vanjs_logo} alt="vanJS Logo" className="w-16 md:w-20 lg:w-24" />
+        <img src={vanjs_logo} alt="vanJS Logo" className="w-16 pl-6 md:w-20 lg:w-30" />
         
         {/* Mobile Menu Button */}
         <button
@@ -38,18 +38,18 @@ export default function Menu() {
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-4 mr-4 ml-4">
-          <button onClick={() => handleNavigation('home')} className="cursor-pointer text-black text-lg hover:text-gray-700">Home</button>
-          <button onClick={() => handleNavigation('about')} className="cursor-pointer text-black text-lg hover:text-gray-700">About Us</button>
-          <button onClick={() => handleNavigation('organizers')} className="cursor-pointer text-black text-lg hover:text-gray-700">Organizers</button>
-          <button onClick={() => handleNavigation('sponsors')} className="cursor-pointer text-black text-lg hover:text-gray-700">Sponsors</button>
-          <button onClick={() => handleNavigation('events')} className="cursor-pointer text-black text-lg hover:text-gray-700">Events</button>
-          <button onClick={() => handleNavigation('faq')} className="cursor-pointer text-black text-lg hover:text-gray-700">FAQ</button>
+        <div className="hidden md:flex pr-6 items-center space-x-4 mr-4 ml-4">
+          <button onClick={() => handleNavigation('home')} className="cursor-pointer mr-15 text-black text-base hover:underline">Home</button>
+          <button onClick={() => handleNavigation('about')} className="cursor-pointer mr-15 text-black text-base hover:underline">About Us</button>
+          <button onClick={() => handleNavigation('organizers')} className="cursor-pointer mr-15 text-black text-base hover:underline">Organizers</button>
+          <button onClick={() => handleNavigation('sponsors')} className="cursor-pointer mr-15 text-black text-base hover:underline">Sponsors</button>
+          <button onClick={() => handleNavigation('events')} className="cursor-pointer mr-15 text-black text-base hover:underline">Events</button>
+          <button onClick={() => handleNavigation('faq')} className="cursor-pointer mr-15 text-black text-base hover:underline">FAQ</button>
           <a
             href="https://discord.gg/TBWB9tMmmC"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-black cursor-pointer text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors text-xs"
+            className="bg-black cursor-pointer text-white ml-6 p-4 text-base rounded-md hover:bg-gray-800 transition-colors"
           >
             Join Our Discord
           </a>

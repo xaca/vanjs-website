@@ -6,8 +6,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
-          <div className="space-y-6">
-            <p className="text-lg text-gray-700 text-left">
+          <div className="space-y-6 flex flex-col">
+            <p className="text-[17px] text-[#1C1B1B] text-left">
               We are a monthly event for JavaScript enthusiasts in Vancouver, BC. We are focused on JavaScript, front-end
               technology, and the open web. Our GitHub repo contains our goals, our Call for Speakers, and our Code
               of Conduct, so come check it out and propose a talk!
@@ -16,7 +16,7 @@ export default function About() {
               href="https://github.com/VanJS/meetup"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block cursor-pointer px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:bg-white hover:border-[#feb92f] hover:text-[#feb92f] hover:scale-105 transition-colors"
+              className="inline-block cursor-pointer w-50 px-8 py-3 bg-[#feb92f] border-1 border-black rounded-lg hover:bg-black hover:text-white"
             >
               Check It Out Here
             </a>
@@ -27,7 +27,7 @@ export default function About() {
             <img 
               src={vanjs_host} 
               alt="VanJS Meetup"
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full lg:w-[533px] lg:h-[334px] object-cover rounded-2xl"
             />
           </div>
         </div>
