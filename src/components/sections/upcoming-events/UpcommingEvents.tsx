@@ -31,9 +31,9 @@ const events: Event[] = [
 
 export default function UpcommingEvents() {
   return (
-    <section id="events" className="py-16 px-4 max-w-7xl mx-auto">
+    <section id="events" className="text-[17px] text-[#1C1B1B] bg-[#F8F8F8] w-full py-16">
       <div className="mb-8">
-        <h2 className="text-4xl font-bold mb-4">Upcoming Events</h2>
+        <h1 className="text-[40px] font-bold mb-4">Upcoming Events</h1>
         <p className="text-gray-600">Check out our upcoming VanJS events in Vancouver</p>
       </div>
       
@@ -72,7 +72,7 @@ export default function UpcommingEvents() {
                 href={event.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:border-[#feb92f] hover:text-[#feb92f] hover:scale-105 hover:bg-white transition-colors text-center"
+                className="w-full sm:w-auto px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:text-white hover:bg-black transition-colors text-center"
               >
                 Save Your Spot Here!
               </a>

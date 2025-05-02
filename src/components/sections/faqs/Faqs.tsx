@@ -55,7 +55,7 @@ export default function Faqs() {
   const [openIndex, setOpenIndex] = useState<number>(0);
 
   return (
-    <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
+    <section className="text-[#1C1B1B] text-[17px] py-16 px-4 md:px-8 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <div className="relative md:sticky md:top-16">
           <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden">
@@ -69,7 +69,7 @@ export default function Faqs() {
         
         <div>
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">FAQs</h2>
+            <h1 className="text-[40px] font-bold text-gray-900 mb-2">FAQs</h1>
             <p className="text-gray-600">Some frequent questions from our community</p>
           </div>
           

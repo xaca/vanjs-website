@@ -2,9 +2,9 @@ import quaky from "/general/quaky.png";
 
 export default function SubmitJoke() {
   return (
-    <div className="relative min-h-[300px] flex flex-col items-center justify-center bg-black text-white py-16 px-4">
+    <div className="relative min-h-[300px] text-[17px] flex flex-col items-center justify-center bg-black text-white py-16 px-4">
       <div className="max-w-2xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 flex items-center justify-center gap-2">
+        <h1 className="text-[40px] md:text-5xl font-bold mb-4 flex items-center justify-center gap-2">
           Make Us LOL!
           <img 
             src={quaky} 
@@ -17,7 +17,7 @@ export default function SubmitJoke() {
         </p>
         <button 
           onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScJgcHF72TR0UTX58_ofDAq646Jig19kG-3d7GwfBDkwYz6kw/viewform', '_blank')}
-          className="bg-[#FDB347] cursor-pointer text-black font-semibold py-2 px-6 rounded-md hover:border-[#feb92f] hover:text-[#feb92f] hover:scale-105 hover:bg-white transition-colors"
+          className="bg-[#FEB92F] cursor-pointer text-black font-semibold py-2 px-6 rounded-md hover:text-white box-content hover:bg-black hover:border hover:border-white transition-colors"
         >
           Submit Your Joke
         </button>
