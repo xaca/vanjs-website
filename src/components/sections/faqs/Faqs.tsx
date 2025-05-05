@@ -41,11 +41,11 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: {
         </span>
       </button>
       <div
-        className={`overflow-hidden transition-all duration-200 ${
+        className={`transition-all duration-200 overflow-auto ${
           isOpen ? 'max-h-96' : 'max-h-0'
         }`}
       >
-        <p className="p-6 text-black text-left">{answer.map((line, index) => <p className="mb-2" key={index}>{line}</p>)}</p>
+        <p className="p-6 text-black text-left">{answer.map((line, index) => <p className="mb-2 pb-3" key={index}>{line}</p>)}</p>
       </div>
     </div>
   );
@@ -55,7 +55,7 @@ export default function Faqs() {
   const [openIndex, setOpenIndex] = useState<number>(0);
 
   return (
-    <section className="text-[#1C1B1B] text-[17px] py-16 px-4 md:px-8 max-w-7xl mx-auto">
+    <section className="text-[#1C1B1B] text-[17px] py-16 px-4 md:px-8 max-w-7xl mx-auto mt-12 mb-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <div className="relative md:sticky md:top-16">
           <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden">

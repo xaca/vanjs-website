@@ -39,12 +39,12 @@ export default function Menu() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex pr-6 items-center space-x-4 mr-4 ml-4">
-          <button onClick={() => handleNavigation('home')} className="cursor-pointer mr-15 text-black text-base hover:underline">Home</button>
-          <button onClick={() => handleNavigation('about')} className="cursor-pointer mr-15 text-black text-base hover:underline">About Us</button>
-          <button onClick={() => handleNavigation('organizers')} className="cursor-pointer mr-15 text-black text-base hover:underline">Organizers</button>
-          <button onClick={() => handleNavigation('sponsors')} className="cursor-pointer mr-15 text-black text-base hover:underline">Sponsors</button>
-          <button onClick={() => handleNavigation('events')} className="cursor-pointer mr-15 text-black text-base hover:underline">Events</button>
-          <button onClick={() => handleNavigation('faq')} className="cursor-pointer mr-15 text-black text-base hover:underline">FAQ</button>
+          <button onClick={() => handleNavigation('home')} className="cursor-pointer lg:mr-15 text-black text-base hover:underline">Home</button>
+          <button onClick={() => handleNavigation('about')} className="cursor-pointer lg:mr-15 text-black text-base hover:underline">About Us</button>
+          <button onClick={() => handleNavigation('organizers')} className="cursor-pointer lg:mr-15 text-black text-base hover:underline">Organizers</button>
+          <button onClick={() => handleNavigation('sponsors')} className="cursor-pointer lg:mr-15 text-black text-base hover:underline">Sponsors</button>
+          <button onClick={() => handleNavigation('events')} className="cursor-pointer lg:mr-15 text-black text-base hover:underline">Events</button>
+          <button onClick={() => handleNavigation('faq')} className="cursor-pointer lg:mr-15 text-black text-base hover:underline">FAQ</button>
           <a
             href="https://discord.gg/TBWB9tMmmC"
             target="_blank"

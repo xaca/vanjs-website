@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="bg-black text-white py-12 px-4 md:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* VanJS Logo and Social Links */}
-        <div className="ml-10 flex flex-col items-center md:items-start">
+        <div className="md:ml-10 flex flex-col items-center md:items-start">
           <img src={van_js_logo_white} className="w-[192px] mb-4" alt="" />
           <div className="flex gap-4">
             <a href="https://www.linkedin.com/company/vancouverjs/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
@@ -34,10 +34,10 @@ export default function Footer() {
         </div>
 
         {/* Join Our Discord */}
-        <div className="flex flex-col items-center md:items-start">
+        <div className="m-6 md:m-0 flex flex-col items-center md:items-start md:ml-6">
           <h3 className="text-xl font-semibold mb-4">Join Our Discord</h3>
           
-          <p className="text-gray-300 text-center md:text-left">
+          <p className="text-left">
             Connect with our community on Discord to get real-time help, share ideas, and discuss projects!
           </p>
           
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         {/* Helpful Links */}
-        <div className="ml-15 flex flex-col items-center md:items-start">
+        <div className="md:ml-15 flex flex-col items-center md:items-start">
           <h3 className="text-xl font-semibold mb-4">Helpful Links</h3>
           <ul className="flex flex-col gap-2 text-center md:text-left">
             <li>

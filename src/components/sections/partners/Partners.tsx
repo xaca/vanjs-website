@@ -3,14 +3,14 @@ import trust_flight_icon from "/general/trust_flight_icon.jpg";
 
 export default function Partners() {
   return (
-    <section className="py-16 px-4 text-[#1C1B1B]">
+    <section className="mt-8 mb-8 py-16 px-4 text-[#1C1B1B]">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-3xl lg:text-[40px] font-bold mb-4">Partners & Sponsors</h1>
         <p className="text-gray-600 mb-12 text-[17px]">
           We are incredibly grateful to our partners and sponsors for helping us to grow and innovate!
         </p>
         
-        <div className="grid grid-cols-2 text-[17px] md:grid-cols-2 gap-8 justify-items-center items-center mb-12">
+        <div className="grid grid-cols-2 text-[17px] md:w-[300px] md:mx-auto md:grid-cols-2 gap-8 justify-items-center items-center mb-12">
           <div className="flex flex-col items-center">
             <div className="w-24 h-24 bg-[#4285f4] rounded-lg flex items-center justify-center">
             <a
@@ -24,8 +24,7 @@ export default function Partners() {
               /></a>
             </div>
             <p className="mt-2 font-medium">Atono</p>
-          </div>
-          
+          </div>   
           <div className="flex flex-col items-center">
             <div className="w-24 h-24 bg-[#1a1a1a] rounded-lg flex items-center justify-center">
               <a

@@ -6,8 +6,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
-          <div className="space-y-6 flex flex-col">
-            <p className="text-[17px] text-[#1C1B1B] text-left">
+          <div className="items-center md:items-start space-y-6 flex flex-col">
+            <p className="m-4 md:ml-0 text-[17px] md:w-sm md:pr-6 lg:w-md text-[#1C1B1B] text-left">
               We are a monthly event for JavaScript enthusiasts in Vancouver, BC. We are focused on JavaScript, front-end
               technology, and the open web. Our GitHub repo contains our goals, our Call for Speakers, and our Code
               of Conduct, so come check it out and propose a talk!
