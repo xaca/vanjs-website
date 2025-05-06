@@ -45,7 +45,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: {
           isOpen ? 'max-h-96' : 'max-h-0'
         }`}
       >
-        <p className="p-6 text-black text-left">{answer.map((line, index) => <p className="mb-2 pb-3" key={index}>{line}</p>)}</p>
+        <div className="p-6 text-black text-left">{answer.map((line, index) => <p className="mb-2 pb-3" key={index}>{line}</p>)}</div>
       </div>
     </div>
   );

@@ -3,9 +3,7 @@
 }
 
 section {
-  /*min-height: 100vh;*/
-  scroll-margin-top: 3rem;
-  /*padding: 2rem;*/
+  /*scroll-margin-top: 3rem;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +20,24 @@ main {
   scroll-behavior: smooth;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  
+/* Escritorio */
+@media (min-width: 1024px) {
+  section {
+    scroll-margin-top: 3rem;
+  }
+}
+
+/*Celular*/
+@media (max-width: 620px) {
+  section {
+    scroll-margin-top: 21rem;
+  }
+}
+
+/*Tablet*/
+/*@media (min-width: 621px) and (max-width:810px) {*/
+@media (min-width: 621px) {
+  section {
+    scroll-margin-top: 4rem;
+  }
 }
