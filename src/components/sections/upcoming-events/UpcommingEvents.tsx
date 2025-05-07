@@ -72,7 +72,7 @@ export default function UpcommingEvents() {
                   href={event.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto px-8 py-3 bg-[#feb92f] border-1 border-black text-black font-semibold rounded-lg hover:text-white hover:bg-black transition-colors text-center"
+                  className="w-full sm:w-auto px-8 py-3 bg-[#feb92f] border-1 border-black text-black rounded-lg hover:text-white hover:bg-black transition-colors text-center"
                 >
                   Save Your Spot Here!
                 </a>

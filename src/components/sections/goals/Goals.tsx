@@ -24,7 +24,7 @@ export default function Goals() {
           <div className="bg-amber-400 rounded-full p-6 mb-4">
           <img src={goals_icon_2} alt="Connect and educate" className="w-16" />
           </div>
-          <h3 className="text-left text-[17px] w-[254px] mb-2">Foster a culture of quality and respect</h3>
+          <h3 className="text-left text-[17px] w-[204px] mb-2">Foster a culture of quality and respect</h3>
         </div>
 
         {/* Stay focused */}
@@ -40,7 +40,7 @@ export default function Goals() {
           <div className="bg-amber-400 rounded-full p-6 mb-4">
           <img src={goals_icon_4} alt="Connect and educate" className="w-16" />
           </div>
-          <h3 className="text-left text-[17px] w-[254px] mb-2">Support newcomers and underrepresented groups in our community</h3>
+          <h3 className="text-left text-[17px] w-[230px] mb-2">Support newcomers and underrepresented groups in our community</h3>
         </div>
       </div>
     </section>

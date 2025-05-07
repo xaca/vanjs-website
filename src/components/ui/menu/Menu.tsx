@@ -14,7 +14,7 @@ export default function Menu() {
     <nav className="bg-[#feb92f] pt-4 px-4 py-2 sticky top-0 z-50">
       <div className="w-full mx-auto flex items-center justify-between">
         {/* Logo */}
-        <img src={vanjs_logo} alt="vanJS Logo" className="w-16 pl-6 md:w-20 lg:w-30" />
+        <img src={vanjs_logo} alt="vanJS Logo" className="w-20 pl-6 md:w-24 lg:w-30" />
         
         {/* Mobile Menu Button */}
         <button
