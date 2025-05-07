@@ -13,7 +13,7 @@ export default function CallForSpeakers() {
           href="https://github.com/VanJS/meetup/blob/master/SPEAKING.md"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#feb92f] border-1 border-black text-black px-6 py-3 rounded-md hover:text-white hover:bg-black cursor-pointer"
+          className="text-[15px] md:w-full bg-[#feb92f] border-1 border-black text-black px-6 py-3 rounded-md hover:text-white hover:bg-black cursor-pointer"
         >
           Send Your Application Here
         </a>
