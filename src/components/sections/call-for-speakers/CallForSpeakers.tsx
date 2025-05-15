@@ -5,7 +5,7 @@ export default function CallForSpeakers() {
         <h2 className="text-3xl md:text-4xl lg:text-[30px] font-bold mb-4">
           Do you want to share your experience with our community?
         </h2>
-        <p className="text-[17px] mb-8">
+        <p className="text-[17px] mb-8 p-8 md:p-0">
           We would love to have you sharing your knowledge as one of our speakers!
         </p>
         

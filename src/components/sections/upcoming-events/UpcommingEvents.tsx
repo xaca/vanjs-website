@@ -35,9 +35,9 @@ export default function UpcommingEvents() {
       <div className="md:w-[700px] lg:w-[1000px]">
         <div className="mb-8">
           <h1 className="text-[40px] font-bold mb-4 mt-8">Upcoming Events</h1>
-          <p className="text-gray-600">Check out our upcoming VanJS events in Vancouver</p>
+          <p className="ml-4 mr-4 text-gray-600">Check out our upcoming VanJS events in Vancouver! Learn, connect, and grow with fellow JavaScript enthusiasts.</p>
         </div>      
-        <div className="w-[270px] md:w-[700px] lg:w-full mx-auto space-y-6 mb-8">
+        <div className="w-[350px] xs:w-[375px] sm-plus:w-[414px] sm:w-[270px] md:w-[700px] lg:w-full mx-auto space-y-6 mb-8">
           {events.map((event) => (
             <div key={event.id} className="border-t border-gray-200 py-6 grid grid-cols-12 gap-4 items-center">
               {/* Date Column */}
@@ -47,7 +47,7 @@ export default function UpcommingEvents() {
               </div>
               
               {/* Content Column */}
-              <div className="col-span-10 sm:col-span-8">
+              <div className="col-span-10 sm:col-span-6">
                 <h3 className="text-xl font-semibold mb-2 text-left">{event.title}</h3>
                 <div className="flex items-center space-x-6">
                   <div className="flex items-center text-gray-600">
@@ -67,7 +67,7 @@ export default function UpcommingEvents() {
               </div>
 
               {/* Button Column */}
-              <div className="col-span-12 sm:col-span-3 flex items-center justify-end">
+              <div className="col-span-12 sm:col-span-5 flex items-center justify-end">
                 <a 
                   href={event.link}
                   target="_blank"

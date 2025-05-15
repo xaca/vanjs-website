@@ -14,7 +14,7 @@ export default function Menu() {
     <nav className="bg-[#feb92f] pt-4 px-4 py-2 sticky top-0 z-50">
       <div className="w-full mx-auto flex items-center justify-between">
         {/* Logo */}
-        <img src={vanjs_logo} alt="vanJS Logo" className="w-20 pl-6 md:w-24 lg:w-30" />
+        <img src={vanjs_logo} alt="vanJS Logo" className="w-26 pl-4 md:w-24 lg:w-30" />
         
         {/* Mobile Menu Button */}
         <button
@@ -23,7 +23,7 @@ export default function Menu() {
           aria-label="Menu"
         >
           <svg
-            className="w-6 h-6"
+            className="w-8 h-8"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -59,12 +59,12 @@ export default function Menu() {
       {/* Mobile/Tablet Menu */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="flex flex-col space-y-2 pt-4">
-          <button onClick={() => handleNavigation('home')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Home</button>
-          <button onClick={() => handleNavigation('about')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">About Us</button>
-          <button onClick={() => handleNavigation('organizers')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Organizers</button>
-          <button onClick={() => handleNavigation('sponsors')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Sponsors</button>
-          <button onClick={() => handleNavigation('events')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">Events</button>
-          <button onClick={() => handleNavigation('faq')} className="text-black text-sm hover:text-gray-700 px-2 py-2 text-left">FAQ</button>
+          <button onClick={() => handleNavigation('home')} className="text-black text-[17px] hover:text-gray-700 px-2 py-2 text-left">Home</button>
+          <button onClick={() => handleNavigation('about')} className="text-black text-[17px] hover:text-gray-700 px-2 py-2 text-left">About Us</button>
+          <button onClick={() => handleNavigation('organizers')} className="text-black text-[17px] hover:text-gray-700 px-2 py-2 text-left">Organizers</button>
+          <button onClick={() => handleNavigation('sponsors')} className="text-black text-[17px] hover:text-gray-700 px-2 py-2 text-left">Sponsors</button>
+          <button onClick={() => handleNavigation('events')} className="text-black text-[17px] hover:text-gray-700 px-2 py-2 text-left">Events</button>
+          <button onClick={() => handleNavigation('faq')} className="text-black text-[17px] hover:text-gray-700 px-2 py-2 text-left">FAQ</button>
           <a
             href="https://discord.gg/TBWB9tMmmC"
             target="_blank"

@@ -70,7 +70,7 @@ export default function Faqs() {
         <div>
           <div className="mb-8">
             <h1 className="text-[40px] font-bold text-gray-900 mb-2">FAQs</h1>
-            <p className="text-gray-600">Some frequent questions from our community</p>
+            <p className="text-gray-600">Got questions? Our FAQ has answers! Explore common queries here.</p>
           </div>
           
           <div className="space-y-2">
